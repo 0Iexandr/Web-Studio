@@ -1,0 +1,31 @@
+.activity {
+    padding-top: 0;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+
+.activity__list {
+    display: flex;
+    column-gap: 30px;
+    list-style: none;
+}
+
+.activity__item {
+    position: relative;
+}
+
+.activity__desc {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 27px 0 27px 0;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background: var(--what-we-are-doing-bg-color);
+}

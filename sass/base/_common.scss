@@ -1,0 +1,32 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background: var(--white-color);
+    color: var(--main-text-color);
+}
+
+.section {
+    padding: 60px 0 60px 0;
+
+    @media screen and(min-width: 1200px) {
+        padding: 94px 0 94px 0;
+    }
+}
+
+.sec-title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.16;
+
+    @media screen and(min-width: 1200px) {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+}

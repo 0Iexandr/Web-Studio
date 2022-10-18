@@ -1,0 +1,16 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+    @media screen and(min-width: 768px) {
+        height: 80px;
+    }
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

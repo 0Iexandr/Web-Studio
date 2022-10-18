@@ -1,0 +1,71 @@
+.hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile-x1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 118px 0 118px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-resolution: 2dppx) {
+        background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile-x2.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet-x1.jpg);
+        padding: 118px 0 118px 0;
+
+        @media (min-resolution: 2dppx) {
+            background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet-x2.jpg);
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop-x1.jpg);
+        padding: 200px 0 200px 0;
+        max-width: 1600px;
+
+        @media (min-resolution: 2dppx) {
+            background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop-x2.jpg);
+        }
+    }
+}
+
+.hero__title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    max-width: 481px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        max-width: 696px;
+    }
+}
+
+.hero__button {
+    cursor: pointer;
+    padding: 10px 24px 10px 24px;
+    background: var(--additional-bg-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+
+    @media screen and (min-width: 1200px) {
+        padding: 10px 32px 10px 32px;
+    }
+}
